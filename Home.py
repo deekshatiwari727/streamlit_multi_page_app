@@ -8,14 +8,14 @@ bar_graph = st.container()
 with bar_graph:
 		st.header("Ingredient Mention")
 		from PIL import Image
-		image = Image.open(r'data\prod_reddit_Vegan_serums.jpeg')
+		image = Image.open(r'data/prod_reddit_Vegan_serums.jpeg')
 		st.image(image, caption='Wordcloud')
 
 		st.header("Engagement Score of Different Ingredients")
-		csv = pd.read_csv(r'data\screen3ingredientdata.csv')
+		csv = pd.read_csv(r'data/screen3ingredientdata.csv')
 		df = pd.DataFrame(csv)
 		#st.dataframe(df)
-		csv1 = pd.read_csv(r'data\ingredienttimeseries.csv')
+		csv1 = pd.read_csv(r'data/ingredienttimeseries.csv')
 		df1 = pd.DataFrame(csv1)
 		#st.dataframe(df1)
 
